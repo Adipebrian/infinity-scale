@@ -58,7 +58,7 @@ nav .menu li a {
   box-shadow: 2px 2px 4px 0 rgba(255, 255, 255, 0.5), -2px -2px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
-.sticky{
+.sticky {
   position: fixed;
   top: 0;
   left: 0;
@@ -83,7 +83,7 @@ nav .menu li a {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(231, 231, 231, 0.5);
   border-radius: 50px;
   display: flex;
-  padding: 50px 50px 50px 50px;
+  padding: 50px;
 }
 .boxBesar .textBox {
   width: 50%;
@@ -580,8 +580,13 @@ nav .menu li a {
 .infoContact {
   width: 40%;
   padding: 10px 40px 10px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .boxinfoContact {
+  width: 100%;
   background-color: #303a52;
   border-radius: 20px;
   display: flex;
@@ -590,13 +595,13 @@ nav .menu li a {
   align-items: center;
   padding: 20px;
 }
-.boxinfoContact .contactRow{
+.boxinfoContact .contactRow {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
-.boxinfoContact .contactRow p{
+.boxinfoContact .contactRow p {
   font-size: 25px;
   color: #fff;
 }
@@ -606,8 +611,7 @@ nav .menu li a {
   margin-right: 20px;
 }
 
-.infoContact .boxMaps{
-  background-color: #303a52;
+.infoContact iframe{
   height: 230px;
   margin-top: 20px;
   border-radius: 20px;
@@ -622,45 +626,130 @@ nav .menu li a {
 } */
 
 /* footer */
-footer{
+footer {
   background-color: #252729;
   padding: 40px;
 }
-.navFooter{
+.navFooter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.navFooter .icon{
+.navFooter .icon {
   display: flex;
   margin: 30px 0px;
 }
-.navFooter .icon img{
+.navFooter .icon img {
   width: 60px;
   margin-right: 20px;
 }
-.navFooter ul{
+.navFooter ul {
   display: flex;
   list-style: none;
 }
-.navFooter ul li{
+.navFooter ul li {
   margin-right: 20px;
   font-size: 30px;
 }
-.navFooter ul li a{
+.navFooter ul li a {
   color: #fff;
   text-decoration: none;
 }
 .navFooter ul li a:hover,
-.navFooter .icon a:hover{
+.navFooter .icon a:hover {
   opacity: 0.7;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   color: #fff;
   font-size: 20px;
   background-color: #252729;
   padding: 20px;
+}
+
+/* Responsive Breakpiont */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  nav .menu{
+    display: none;
+  }
+  .banner {
+    padding: 20px;
+  }
+  .boxBesar .imgBanner {
+    display: none;
+  }
+  .boxBesar {
+    padding: 10px;
+  }
+  .boxBesar .textBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .boxBesar .textBox h1{
+    width: 100%;
+    font-size: 35px;
+  }
+  .roller #rollertext{
+    font-size: 20px;
+  }
+  .boxBesar .textBox p{
+    margin: 10px;
+  }
+
+  .fitur{
+    padding: 10px;
+  }
+  .heading{
+    font-size: 35px;
+    padding: 40px 0px 20px 0px;
+  }
+  .gridFitur{
+    gap: 30px;
+  }
+  .product{
+    padding: 10px;
+  }
+  .gridProduct{
+    gap: 50px;
+  }
+  .contact{
+    padding: 10px;
+    flex-direction: column;
+  }
+  .boxMessage{
+    width: 100%;
+  }
+  .infoContact{
+    width: 100%;
+    padding: 10px;
+  }
+  .boxinfoContact .contactRow p{
+    font-size: 20px;
+  }
+  footer{
+    padding: 10px;
+  }
+  .navFooter .icon img{
+    width: 40px;
+  }
+  .navFooter ul li{
+    font-size: 20px;
+  }
+  .copyright{
+    font-size: 15px;
+  }
 }

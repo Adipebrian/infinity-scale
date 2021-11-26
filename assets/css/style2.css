@@ -1,0 +1,70 @@
+.allProduct{
+    width: 100%;
+    background-color: #2a2e32;
+    padding: 60px;
+}
+.gridAllProduct{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.boxAll{
+    border: 3px solid #cfe2f7;
+    width: 250px;
+    height: 360px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.boxAll .boxImageAll{
+    border-radius: 20px;
+    background-color: #cfe2f7;
+    padding: 15px 15px 0px 15px;
+
+}
+.boxAll .boxImageAll .boxHarga{
+    color: #fff;
+    background-color: #252729;
+    font-size: 25px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 0px;
+
+
+}
+.boxAll .boxImageAll h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+.boxAll .boxImageAll img{
+    width: 180px;
+}
+.boxDetail{
+    background-color: #cfe2f7;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    margin-top: 10px;
+    border-radius: 15px 15px 20px 20px;
+    align-items: center;
+    
+}
+.boxDetail .detail{
+    color: #252729;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.boxDetail .buyNow{
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #252729;
+    padding: 16px;
+    border-radius: 20px;
+    margin-right: -14px;
+
+}
