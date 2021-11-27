@@ -1,3 +1,10 @@
+const menuToggle = document.querySelector(".menu-toggle input");
+const nav = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", function () {
+  nav.classList.toggle("slide");
+});
+
 jQuery(document).ready(function ($) {
   "use strict";
   //  TESTIMONIALS CAROUSEL HOOK
@@ -28,6 +35,7 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("nav");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
 
 
 // scroll
