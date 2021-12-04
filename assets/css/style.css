@@ -642,12 +642,11 @@ nav.sticky {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 20px;
+  padding-left: 70px;
 }
 .boxinfoContact .contactRow {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
